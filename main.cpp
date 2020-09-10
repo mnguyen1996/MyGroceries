@@ -27,7 +27,10 @@ int main()
   }while( input != 'q' && input != 'Q' );
   if(input == 'q' && input == 'Q')
     {
-      printf(list);
+      for(vector<string>::iterator i = list.begin(); i != list.end(); i++)
+      {
+        cout << *i << endl;
+      }
     }
 
     if(list.empty())
